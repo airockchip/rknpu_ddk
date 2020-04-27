@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['pad',['pad',['../structrk_1_1nn_1_1_conv2_d_attr.html#ad9e86822e9f23a085190dddc0e2b4edb',1,'rk::nn::Conv2DAttr::pad()'],['../structrk_1_1nn_1_1_pool_attr.html#ad9e86822e9f23a085190dddc0e2b4edb',1,'rk::nn::PoolAttr::pad()'],['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117a58a4470bc0f9a4fcaf059b26e95ab9c2',1,'rk::nn::PAD()']]],
+  ['pad_5ftype',['pad_type',['../structrk_1_1nn_1_1_conv2_d_attr.html#abe23322a74c4040373f6dbeb7b47cd38',1,'rk::nn::Conv2DAttr::pad_type()'],['../structrk_1_1nn_1_1_pool_attr.html#abe23322a74c4040373f6dbeb7b47cd38',1,'rk::nn::PoolAttr::pad_type()']]],
+  ['padtype',['PadType',['../namespacerk_1_1nn.html#a427d787c4d758e305976cc5a7b7385ce',1,'rk::nn']]],
+  ['pass_5fthrough',['pass_through',['../structrk_1_1nn_1_1_input_info.html#ae935266c233bafa4ca0153906ef15a16',1,'rk::nn::InputInfo']]],
+  ['perm',['perm',['../structrk_1_1nn_1_1_permute_attr.html#a51a2503ae13a103f4bb7b5d938a1162d',1,'rk::nn::PermuteAttr']]],
+  ['permute',['PERMUTE',['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117acfdde4b47c27f4efbd832e1ac7f8a8fc',1,'rk::nn']]],
+  ['permuteattr',['PermuteAttr',['../structrk_1_1nn_1_1_permute_attr.html',1,'rk::nn']]],
+  ['pool',['POOL',['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117afd5dc07b8d30d1ad403905c85f9ba741',1,'rk::nn']]],
+  ['pool_5ftype',['pool_type',['../structrk_1_1nn_1_1_pool_attr.html#a20402fbba87d5d01d7da176b5f8a489c',1,'rk::nn::PoolAttr']]],
+  ['poolattr',['PoolAttr',['../structrk_1_1nn_1_1_pool_attr.html',1,'rk::nn']]],
+  ['pooling_5favg',['POOLING_AVG',['../namespacerk_1_1nn.html#a7dc3d3b8679819cbf2318e6b567c3917a3da4e9fa3426e637a971b76fe3c4045b',1,'rk::nn']]],
+  ['pooling_5fmax',['POOLING_MAX',['../namespacerk_1_1nn.html#a7dc3d3b8679819cbf2318e6b567c3917ab305b08a2f6cd6a98c0fa341473d7303',1,'rk::nn']]],
+  ['pooling_5funknown',['POOLING_UNKNOWN',['../namespacerk_1_1nn.html#a7dc3d3b8679819cbf2318e6b567c3917a76d800ac77f9e3143b778a7a92706869',1,'rk::nn']]],
+  ['pooltype',['PoolType',['../namespacerk_1_1nn.html#a7dc3d3b8679819cbf2318e6b567c3917',1,'rk::nn']]],
+  ['poolwithargmax',['POOLWITHARGMAX',['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117af9e1a21a2c08399092157a5facf3f422',1,'rk::nn']]],
+  ['pow',['POW',['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117a2f4ddc85dd27c0d03482e36ec69479a7',1,'rk::nn']]],
+  ['precision',['precision',['../structrk_1_1nn_1_1_tensor_attr.html#a475d6b106a1843d12020b3b9749f70c8',1,'rk::nn::TensorAttr']]],
+  ['precisiontype',['PrecisionType',['../namespacerk_1_1nn.html#a13c421245f43fd2d7edd0e94c537965d',1,'rk::nn']]],
+  ['prelu',['PRELU',['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117ae38a71c2a212332cb2bfe2ab1bc78de4',1,'rk::nn']]],
+  ['proposal',['PROPOSAL',['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117a3b08172ce8ce6ca421194b04d464c3ad',1,'rk::nn']]]
+];
