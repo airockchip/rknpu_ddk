@@ -55,7 +55,7 @@ enum OperatorType {
     DECONVOLUTION,          ///< unimplement
     RESHAPE,                ///< inputs: [in]                            outputs: [out]      attrs: ReshapeAttr
     PERMUTE,                ///< inputs: [in]                            outputs: [out]      attrs: PermuteAttr
-    PRELU,                  ///< unimplement
+    PRELU,                  ///< inputs: [in]                            outputs: [out]      attrs: PReluAttr
     UPSAMPLE,               ///< unimplement
     RELU,                   ///< inputs: [in]                            outputs: [out]      attrs: nullptr
     RELUN,                  ///< unimplement
@@ -69,9 +69,9 @@ enum OperatorType {
     CROP,                   ///< unimplement
     SUBTRACT,               ///< inputs: [in1, in2]                      outputs: [out]      attrs: nullptr
     RELU6,                  ///< inputs: [in]                            outputs: [out]      attrs: nullptr
-    SIGMOID,                ///< unimplement
+    SIGMOID,                ///< inputs: [in]                            outputs: [out]      attrs: nullptr
     TANH,                   ///< unimplement
-    SQRT,                   ///< unimplement
+    SQRT,                   ///< inputs: [in]                            outputs: [out]      attrs: nullptr
     RSQRT,                  ///< unimplement
     DIVIDE,                 ///< unimplement
     DROPOUT,                ///< unimplement
@@ -90,7 +90,7 @@ enum OperatorType {
     MATRIXMUL,              ///< unimplement
     LSTMUNIT,               ///< unimplement
     LAYER_NORM,             ///< unimplement
-    REDUCE,                 ///< unimplement
+    REDUCE,                 ///< inputs: [in]                            outputs: [out]      attrs: nullptr
     INSTANCE_NORM,          ///< unimplement
     TENSORSTACKCONCAT,      ///< unimplement
     STRIDED_SLICE,          ///< unimplement
@@ -107,7 +107,7 @@ enum OperatorType {
     STACK,                  ///< unimplement
     FLOOR,                  ///< unimplement
     SQUARE,                 ///< unimplement
-    NEG,                    ///< unimplement
+    NEG,                    ///< inputs: [in]                            outputs: [out]      attrs: nullptr
     EXP,                    ///< unimplement
     HASHTABLE_LOOKUP,       ///< unimplement
     EMBEDDING_LOOKUP,       ///< unimplement
@@ -213,6 +213,15 @@ struct SliceAttr {
 struct SoftmaxAttr {
     float beta;                     ///< A FLOAT32 value, specifying the positive scaling factor for the exponent, beta.
     uint32_t axis;                  ///< describes the axis of the inputs
+};
+
+/** attrbutes of Reduce
+ */
+struct ReduceAttr {
+    ReduceType type;                ///< reduce type
+    std::vector<uint32_t> axis;     ///< axis list
+    uint32_t axis_num;              ///< the number of axis list
+    bool keep_dim;                  ///< keep dim flag
 };
 
 /** Operator is used to get the basic imformation.

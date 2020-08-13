@@ -78,5 +78,17 @@ enum class RoundType : int
     ROUND_UNKNOWN
 };
 
+/** Reduce type enum */
+enum class ReduceType : int
+{
+    REDUCE_MEAN = 0,
+    REDUCE_MAX,
+    REDUCE_MIN,
+    REDUCE_SUM,
+    REDUCE_ALL,
+    REDUCE_ANY,
+    REDUCE_PROD
+};
+
 }
 }
