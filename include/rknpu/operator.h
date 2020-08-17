@@ -93,7 +93,7 @@ enum OperatorType {
     REDUCE,                 ///< inputs: [in]                            outputs: [out]      attrs: nullptr
     INSTANCE_NORM,          ///< unimplement
     TENSORSTACKCONCAT,      ///< unimplement
-    STRIDED_SLICE,          ///< unimplement
+    STRIDED_SLICE,          ///< inputs: [in]                            outputs: [out]      attrs: StridedSliceAttr
     SIGNAL_FRAME,           ///< unimplement
     A_TIMES_B_PLUS_C,       ///< unimplement
     SVDF,                   ///< unimplement
@@ -222,6 +222,14 @@ struct ReduceAttr {
     std::vector<uint32_t> axis;     ///< axis list
     uint32_t axis_num;              ///< the number of axis list
     bool keep_dim;                  ///< keep dim flag
+};
+
+/** attrbutes of StridedSlice
+ */
+struct StridedSliceAttr {
+    std::vector<int32_t> begin;     ///< begin indices of corresponding axis
+    std::vector<int32_t> end;       ///< end indices of corresponding axis
+    std::vector<int32_t> stride;    ///< stride indices of corresponding axis
 };
 
 /** Operator is used to get the basic imformation.
