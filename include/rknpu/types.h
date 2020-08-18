@@ -90,5 +90,14 @@ enum class ReduceType : int
     REDUCE_PROD
 };
 
+/** Pad mode enum */
+enum class PadMode : int
+{
+    PAD_CONSTANT = 0,
+    PAD_REPLICATE,
+    PAD_SYMMETRIC,
+    PAD_REFLECT
+};
+
 }
 }

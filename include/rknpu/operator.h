@@ -64,7 +64,7 @@ enum OperatorType {
     L2_NORMALIZE,           ///< unimplement
     POOLWITHARGMAX,         ///< unimplement
     ARGMAX,                 ///< unimplement
-    MAXIMUM,                ///< unimplement
+    MAXIMUM,                ///< inputs: [in1, in2]                      outputs: [out]      attrs: nullptr
     L2NORMALIZESCALE,       ///< unimplement
     CROP,                   ///< unimplement
     SUBTRACT,               ///< inputs: [in1, in2]                      outputs: [out]      attrs: nullptr
@@ -86,7 +86,7 @@ enum OperatorType {
     ELU,                    ///< unimplement
     BATCH2SPACE,            ///< unimplement
     SPACE2BATCH,            ///< unimplement
-    PAD,                    ///< unimplement
+    PAD,                    ///< inputs: [in]                            outputs: [out]      attrs: PadAttr
     MATRIXMUL,              ///< unimplement
     LSTMUNIT,               ///< unimplement
     LAYER_NORM,             ///< unimplement
@@ -230,6 +230,15 @@ struct StridedSliceAttr {
     std::vector<int32_t> begin;     ///< begin indices of corresponding axis
     std::vector<int32_t> end;       ///< end indices of corresponding axis
     std::vector<int32_t> stride;    ///< stride indices of corresponding axis
+};
+
+/** attrbutes of Pad
+ */
+struct PadAttr {
+    PadMode mode;                   ///< pad mode
+    std::vector<uint32_t> begin;    ///< begin pading number of corresponding axis
+    std::vector<uint32_t> end;      ///< end pading number of corresponding axis
+    int32_t const_val;              ///< constant value
 };
 
 /** Operator is used to get the basic imformation.
