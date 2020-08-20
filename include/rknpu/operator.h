@@ -61,7 +61,7 @@ enum OperatorType {
     RELUN,                  ///< unimplement
     LSTM,                   ///< unimplement
     REORG,                  ///< unimplement
-    L2_NORMALIZE,           ///< unimplement
+    L2_NORMALIZE,           ///< inputs: [in]                            outputs: [out]      attrs: nullptr
     POOLWITHARGMAX,         ///< unimplement
     ARGMAX,                 ///< unimplement
     MAXIMUM,                ///< inputs: [in1, in2]                      outputs: [out]      attrs: nullptr
@@ -89,7 +89,7 @@ enum OperatorType {
     PAD,                    ///< inputs: [in]                            outputs: [out]      attrs: PadAttr
     MATRIXMUL,              ///< unimplement
     LSTMUNIT,               ///< unimplement
-    LAYER_NORM,             ///< unimplement
+    LAYER_NORM,             ///< inputs: [in, mean, var]                 outputs: [out]      attrs: LayerNormAttr
     REDUCE,                 ///< inputs: [in]                            outputs: [out]      attrs: nullptr
     INSTANCE_NORM,          ///< unimplement
     TENSORSTACKCONCAT,      ///< unimplement
@@ -239,6 +239,12 @@ struct PadAttr {
     std::vector<uint32_t> begin;    ///< begin pading number of corresponding axis
     std::vector<uint32_t> end;      ///< end pading number of corresponding axis
     int32_t const_val;              ///< constant value
+};
+
+/** attrbutes of LayerNormalization
+ */
+struct LayerNormAttr {
+    float eps;                      ///< epsilon, use to avoid division by zero.
 };
 
 /** Operator is used to get the basic imformation.
