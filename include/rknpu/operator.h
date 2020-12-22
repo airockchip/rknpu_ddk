@@ -271,6 +271,7 @@ struct InstanceNormAttr {
 /** attrbutes of Scale
  */
 struct ScaleAttr {
+    float scale;                     ///< scale
     float bias;                      ///< bias
 };
 
