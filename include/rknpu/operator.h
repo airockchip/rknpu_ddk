@@ -70,7 +70,7 @@ enum OperatorType {
     SUBTRACT,               ///< inputs: [in1, in2]                      outputs: [out]      attrs: nullptr
     RELU6,                  ///< inputs: [in]                            outputs: [out]      attrs: nullptr
     SIGMOID,                ///< inputs: [in]                            outputs: [out]      attrs: nullptr
-    TANH,                   ///< unimplement
+    TANH,                   ///< inputs: [in]                            outputs: [out]      attrs: nullptr
     SQRT,                   ///< inputs: [in]                            outputs: [out]      attrs: nullptr
     RSQRT,                  ///< unimplement
     DIVIDE,                 ///< unimplement
@@ -81,7 +81,7 @@ enum OperatorType {
     DEPTH2SPACE,            ///< unimplement
     SPACE2DEPTH,            ///< unimplement
     DATACONVERT,            ///< inputs: [in]                            outputs: [out]      attrs: nullptr
-    SCALE,                  ///< unimplement
+    SCALE,                  ///< inputs: [in, scale, bias]               outputs: [out]      attrs: ScaleAttr   formula: Y = scale*X + bias
     SLICE,                  ///< inputs: [in]                            outputs: [out]      attrs: SliceAttr
     ELU,                    ///< unimplement
     BATCH2SPACE,            ///< unimplement
@@ -91,13 +91,13 @@ enum OperatorType {
     LSTMUNIT,               ///< unimplement
     LAYER_NORM,             ///< inputs: [in, mean, var]                 outputs: [out]      attrs: LayerNormAttr
     REDUCE,                 ///< inputs: [in]                            outputs: [out]      attrs: nullptr
-    INSTANCE_NORM,          ///< unimplement
+    INSTANCE_NORM,          ///< inputs: [in, mean, var]                 outputs: [out]      attrs: InstanceNormAttr
     TENSORSTACKCONCAT,      ///< unimplement
     STRIDED_SLICE,          ///< inputs: [in]                            outputs: [out]      attrs: StridedSliceAttr
     SIGNAL_FRAME,           ///< unimplement
     A_TIMES_B_PLUS_C,       ///< unimplement
     SVDF,                   ///< unimplement
-    ABS,                    ///< unimplement
+    ABS,                    ///< inputs: [in]                            outputs: [out]      attrs: nullptr
     CONV1D,                 ///< unimplement
     LRN2,                   ///< unimplement
     POW,                    ///< unimplement
@@ -123,6 +123,8 @@ enum OperatorType {
     ARGMIN,                 ///< unimplement
     ROI_ALIGN,              ///< unimplement   
     LOG_SOFTMAX,            ///< unimplement
+    NBG,                    ///< inputs: [in]                            outputs: [out]      attrs: NBGAttr
+    FLATTEN,                ///< inputs: [in]                            outputs: [out]      attrs: FlattenAttr
 };
 
 /** attrbutes of BatchNormalization
@@ -245,6 +247,31 @@ struct PadAttr {
  */
 struct LayerNormAttr {
     float eps;                      ///< epsilon, use to avoid division by zero.
+};
+
+/** attrbutes of NBG
+ */
+struct NBGAttr {
+    NBGType type;                ///< nbg type
+    std::string nbg_path;        ///< nbg full path
+};
+
+/** attrbutes of Flatten
+ */
+struct FlattenAttr {
+    int32_t axis;                   ///< which axis to flatten
+};
+
+/** attrbutes of InstanceNorm
+ */
+struct InstanceNormAttr {
+    float eps;                      ///< epsilon, use to avoid division by zero.
+};
+
+/** attrbutes of Scale
+ */
+struct ScaleAttr {
+    float bias;                      ///< bias
 };
 
 /** Operator is used to get the basic imformation.

@@ -99,5 +99,15 @@ enum class PadMode : int
     PAD_REFLECT
 };
 
+/** NBG type enum */
+enum class NBGType : int
+{
+    NBG_FILE = 0,
+    NBG_FOLDER,
+    NBG_LABEL,
+    NBG_POINTER
+};
+
+
 }
 }

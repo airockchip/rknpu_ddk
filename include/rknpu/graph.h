@@ -73,6 +73,22 @@ public:
      *  @return output tensors set by SetInputsOutputs()
     */
     std::vector<std::shared_ptr<Tensor>> GetOutputs();
+    
+    /** Enable cache mode, which cache compiled model to binary graph when first run.
+     * 
+     *  @param cache_path [in] save graph cache full path
+     *  @return RK_SUCCESS when success
+    */
+    int EnableCreateCache(std::string cache_path);
+
+    /** Load cached binary graph path.
+     * 
+     *  @param cache_path [in] load graph cache full path
+     *  @param input_tensors [in] input tensors of graph
+     *  @param output_tensors [in] output tensors of graph
+     *  @return RK_SUCCESS when success
+    */
+    int LoadCache(std::string cache_path,std::vector<std::shared_ptr<Tensor>> input_tensors, std::vector<std::shared_ptr<Tensor>> output_tensors);
 };
 
 }
