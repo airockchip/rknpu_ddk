@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exection',['Exection',['../classrk_1_1nn_1_1_exection.html',1,'rk::nn']]]
+  ['dropoutattr',['DropoutAttr',['../structrk_1_1nn_1_1_dropout_attr.html',1,'rk::nn']]]
 ];

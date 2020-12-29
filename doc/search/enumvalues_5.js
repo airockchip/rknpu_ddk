@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['flatten',['FLATTEN',['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117a86b9d0a7bdc751d573ed860fd6753623',1,'rk::nn']]],
   ['float16',['FLOAT16',['../namespacerk_1_1nn.html#a13c421245f43fd2d7edd0e94c537965dac49f280a5ad551ccc77be0b01a2f386a',1,'rk::nn']]],
   ['float32',['FLOAT32',['../namespacerk_1_1nn.html#a13c421245f43fd2d7edd0e94c537965da967d280b5c16d95f2947647dd2ca6cc2',1,'rk::nn']]],
   ['float64',['FLOAT64',['../namespacerk_1_1nn.html#a13c421245f43fd2d7edd0e94c537965da139882c654db8a57f7c3092de1dd0b02',1,'rk::nn']]],

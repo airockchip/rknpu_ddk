@@ -102,14 +102,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adc4bf6dc90c4b8ed355154753b2d9ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae55ef806b29ad70cd952e2c1508715ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_tensor.html#ae55ef806b29ad70cd952e2c1508715ae">~Tensor</a> ()=default</td></tr>
 <tr class="separator:ae55ef806b29ad70cd952e2c1508715ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e40c599b679ab922f5fcd2a9e388d71"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_tensor.html#a4e40c599b679ab922f5fcd2a9e388d71">GetDims</a> ()=0</td></tr>
-<tr class="separator:a4e40c599b679ab922f5fcd2a9e388d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722f2ec00b86cc6498f9638ced2d6796"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_tensor.html#a722f2ec00b86cc6498f9638ced2d6796">GetDims</a> ()=0</td></tr>
+<tr class="separator:a722f2ec00b86cc6498f9638ced2d6796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7b4944df07afc86d550b0ee9ae6c45f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacerk_1_1nn.html#a13c421245f43fd2d7edd0e94c537965d">PrecisionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_tensor.html#af7b4944df07afc86d550b0ee9ae6c45f">GetPrecision</a> ()=0</td></tr>
 <tr class="separator:af7b4944df07afc86d550b0ee9ae6c45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23488061963795be6f8341c5a9d3246a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacerk_1_1nn.html#a208f6d2ebb490c7877041482cf7da65c">DataLayoutType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_tensor.html#a23488061963795be6f8341c5a9d3246a">GetLayoutType</a> ()=0</td></tr>
+<tr class="separator:a23488061963795be6f8341c5a9d3246a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae20ad6ba616b8a2afed1e3538a75ed4a"><td class="memItemLeft" align="right" valign="top">virtual std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_tensor.html#ae20ad6ba616b8a2afed1e3538a75ed4a">GetName</a> ()=0</td></tr>
 <tr class="separator:ae20ad6ba616b8a2afed1e3538a75ed4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d8b65cae7754b9490cb64866fad9bb6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacerk_1_1nn.html#ab7117a78440b149f5bec3994079bb08b">TensorRole</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_tensor.html#a7d8b65cae7754b9490cb64866fad9bb6">GetRole</a> ()=0</td></tr>
 <tr class="separator:a7d8b65cae7754b9490cb64866fad9bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a31df352bbf7eb0a1efdbce046552a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacerk_1_1nn.html#a0a46b5533bfcf042c3091803849e5e7b">QuantizationType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_tensor.html#a91a31df352bbf7eb0a1efdbce046552a">GetQntType</a> () const =0</td></tr>
+<tr class="separator:a91a31df352bbf7eb0a1efdbce046552a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6e25baf7ef4badf2fdd489e42a4e33"><td class="memItemLeft" align="right" valign="top">virtual uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_tensor.html#a7b6e25baf7ef4badf2fdd489e42a4e33">GetQntBits</a> () const =0</td></tr>
+<tr class="separator:a7b6e25baf7ef4badf2fdd489e42a4e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2282b26961680f6db27fd69d9b88b97d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structrk_1_1nn_1_1_quantization_param_d_f_p.html">QuantizationParamDFP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_tensor.html#a2282b26961680f6db27fd69d9b88b97d">GetQntParamDFP</a> () const =0</td></tr>
+<tr class="separator:a2282b26961680f6db27fd69d9b88b97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2265e8e971b860e43a0742b4c239cb2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structrk_1_1nn_1_1_quantization_param_affine_asymmetric.html">QuantizationParamAffineAsymmetric</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_tensor.html#ab2265e8e971b860e43a0742b4c239cb2">GetQntParamAffineAsymmetric</a> () const =0</td></tr>
+<tr class="separator:ab2265e8e971b860e43a0742b4c239cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb3e2df54ead34bb716dd279af1c484"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structrk_1_1nn_1_1_quantization_param_symmetric.html">QuantizationParamSymmetric</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_tensor.html#abfb3e2df54ead34bb716dd279af1c484">GetQntParamSymmetric</a> () const =0</td></tr>
+<tr class="separator:abfb3e2df54ead34bb716dd279af1c484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bf54ef4b865b43e230ebab8b1f286bf"><td class="memItemLeft" align="right" valign="top">virtual const std::shared_ptr&lt; const <a class="el" href="structrk_1_1nn_1_1_tensor_attr.html">TensorAttr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_tensor.html#a7bf54ef4b865b43e230ebab8b1f286bf">GetAttrs</a> ()=0</td></tr>
 <tr class="separator:a7bf54ef4b865b43e230ebab8b1f286bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a346c0bd4892a6bf7fdb15b2204411da3"><td class="memItemLeft" align="right" valign="top">virtual const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_tensor.html#a346c0bd4892a6bf7fdb15b2204411da3">GetData</a> ()=0</td></tr>
@@ -229,7 +241,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4e40c599b679ab922f5fcd2a9e388d71"></a>
+<a class="anchor" id="a722f2ec00b86cc6498f9638ced2d6796"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -237,7 +249,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::vector&lt;uint32_t&gt; GetDims </td>
+          <td class="memname">virtual std::vector&lt;int32_t&gt; GetDims </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -251,6 +263,31 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the dimensions of <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>the dimensions of <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a23488061963795be6f8341c5a9d3246a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacerk_1_1nn.html#a208f6d2ebb490c7877041482cf7da65c">DataLayoutType</a> GetLayoutType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the layout type of <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>the layout type of <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a> </dd></dl>
 
 </div>
 </div>
@@ -301,6 +338,131 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the precision of <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>the precision of <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7b6e25baf7ef4badf2fdd489e42a4e33"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint8_t GetQntBits </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the Quantization Bits of <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>the Quantization Bits of <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab2265e8e971b860e43a0742b4c239cb2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="structrk_1_1nn_1_1_quantization_param_affine_asymmetric.html">QuantizationParamAffineAsymmetric</a> GetQntParamAffineAsymmetric </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the Affine Asymmetric Quantization parameters of <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>the Affine Asymmetric Quantization parameters of <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2282b26961680f6db27fd69d9b88b97d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="structrk_1_1nn_1_1_quantization_param_d_f_p.html">QuantizationParamDFP</a> GetQntParamDFP </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the Dynamic fixed point Quantization parameters of <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>the Dynamic fixed point Quantization parameters of <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abfb3e2df54ead34bb716dd279af1c484"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="structrk_1_1nn_1_1_quantization_param_symmetric.html">QuantizationParamSymmetric</a> GetQntParamSymmetric </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the Symmetric Quantization parameters of <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>the Symmetric Quantization parameters of <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a91a31df352bbf7eb0a1efdbce046552a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacerk_1_1nn.html#a0a46b5533bfcf042c3091803849e5e7b">QuantizationType</a> GetQntType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the Quantization type of <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>the Quantization type of <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a> </dd></dl>
 
 </div>
 </div>

@@ -1,7 +1,13 @@
 var searchData=
 [
   ['pad',['pad',['../structrk_1_1nn_1_1_conv2_d_attr.html#ad9e86822e9f23a085190dddc0e2b4edb',1,'rk::nn::Conv2DAttr::pad()'],['../structrk_1_1nn_1_1_pool_attr.html#ad9e86822e9f23a085190dddc0e2b4edb',1,'rk::nn::PoolAttr::pad()'],['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117a58a4470bc0f9a4fcaf059b26e95ab9c2',1,'rk::nn::PAD()']]],
+  ['pad_5fconstant',['PAD_CONSTANT',['../namespacerk_1_1nn.html#ad873faf743c370de4290042ad531e423a58ada8b847a3d9bacf6934e909d5c775',1,'rk::nn']]],
+  ['pad_5freflect',['PAD_REFLECT',['../namespacerk_1_1nn.html#ad873faf743c370de4290042ad531e423af12002b53c2c8de0c3c7df8f65ae6da0',1,'rk::nn']]],
+  ['pad_5freplicate',['PAD_REPLICATE',['../namespacerk_1_1nn.html#ad873faf743c370de4290042ad531e423a8907f5f3e338e2f524c3d4979efdf5a0',1,'rk::nn']]],
+  ['pad_5fsymmetric',['PAD_SYMMETRIC',['../namespacerk_1_1nn.html#ad873faf743c370de4290042ad531e423af4de9adaeeb2a7c9c356f1d3e8a2ff9b',1,'rk::nn']]],
   ['pad_5ftype',['pad_type',['../structrk_1_1nn_1_1_conv2_d_attr.html#abe23322a74c4040373f6dbeb7b47cd38',1,'rk::nn::Conv2DAttr::pad_type()'],['../structrk_1_1nn_1_1_pool_attr.html#abe23322a74c4040373f6dbeb7b47cd38',1,'rk::nn::PoolAttr::pad_type()']]],
+  ['padattr',['PadAttr',['../structrk_1_1nn_1_1_pad_attr.html',1,'rk::nn']]],
+  ['padmode',['PadMode',['../namespacerk_1_1nn.html#ad873faf743c370de4290042ad531e423',1,'rk::nn']]],
   ['padtype',['PadType',['../namespacerk_1_1nn.html#a427d787c4d758e305976cc5a7b7385ce',1,'rk::nn']]],
   ['pass_5fthrough',['pass_through',['../structrk_1_1nn_1_1_input_info.html#ae935266c233bafa4ca0153906ef15a16',1,'rk::nn::InputInfo']]],
   ['perm',['perm',['../structrk_1_1nn_1_1_permute_attr.html#a51a2503ae13a103f4bb7b5d938a1162d',1,'rk::nn::PermuteAttr']]],

@@ -113,6 +113,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a99030fda5c18514c1c07220e6b726fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf0264ec0bb37c6eda9b584bd9820177"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classrk_1_1nn_1_1_tensor.html">Tensor</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_graph.html#acf0264ec0bb37c6eda9b584bd9820177">GetOutputs</a> ()</td></tr>
 <tr class="separator:acf0264ec0bb37c6eda9b584bd9820177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0944cb9866a1c6409410e0fb75fe4b62"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="structrk_1_1nn_1_1_tensor_attr.html">TensorAttr</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_graph.html#a0944cb9866a1c6409410e0fb75fe4b62">GetInputTensorsAttr</a> ()</td></tr>
+<tr class="separator:a0944cb9866a1c6409410e0fb75fe4b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee83c28fa54bc3c7222da91a4b90a2e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="structrk_1_1nn_1_1_tensor_attr.html">TensorAttr</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_graph.html#a9ee83c28fa54bc3c7222da91a4b90a2e">GetOutputTensorsAttr</a> ()</td></tr>
+<tr class="separator:a9ee83c28fa54bc3c7222da91a4b90a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cbb0a36b1567595284195ce8c4c2894"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_graph.html#a1cbb0a36b1567595284195ce8c4c2894">EnableCreateCache</a> (std::string cache_path)</td></tr>
+<tr class="separator:a1cbb0a36b1567595284195ce8c4c2894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410a3c082f3d0858b398c6cc9f8e6a0b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_graph.html#a410a3c082f3d0858b398c6cc9f8e6a0b">LoadCache</a> (std::string cache_path)</td></tr>
+<tr class="separator:a410a3c082f3d0858b398c6cc9f8e6a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00c21b795bad2e356b26230a0cb6589"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrk_1_1nn_1_1_graph.html#ad00c21b795bad2e356b26230a0cb6589">LoadCache</a> (const char *cache_buf, size_t size)</td></tr>
+<tr class="separator:ad00c21b795bad2e356b26230a0cb6589"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -246,6 +256,30 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1cbb0a36b1567595284195ce8c4c2894"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int EnableCreateCache </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>cache_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enable cache mode, which cache compiled model to binary graph when first run.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cache_path</td><td>[in] save graph cache full path </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>RK_SUCCESS when success </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a99030fda5c18514c1c07220e6b726fb5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -263,6 +297,23 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a0944cb9866a1c6409410e0fb75fe4b62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="structrk_1_1nn_1_1_tensor_attr.html">TensorAttr</a>&gt; &gt; GetInputTensorsAttr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the attribute of input tensors</p>
+<dl class="section return"><dt>Returns</dt><dd>input tensors attribute set by <a class="el" href="classrk_1_1nn_1_1_graph.html#aacd7044be98d5a9eecbef6a844b2c829">SetInputsOutputs()</a> </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="acf0264ec0bb37c6eda9b584bd9820177"></a>
 <div class="memitem">
 <div class="memproto">
@@ -277,6 +328,82 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the output tensor of graph</p>
 <dl class="section return"><dt>Returns</dt><dd>output tensors set by <a class="el" href="classrk_1_1nn_1_1_graph.html#aacd7044be98d5a9eecbef6a844b2c829">SetInputsOutputs()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9ee83c28fa54bc3c7222da91a4b90a2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="structrk_1_1nn_1_1_tensor_attr.html">TensorAttr</a>&gt; &gt; GetOutputTensorsAttr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the attribute of output tensors</p>
+<dl class="section return"><dt>Returns</dt><dd>output tensors attribute set by <a class="el" href="classrk_1_1nn_1_1_graph.html#aacd7044be98d5a9eecbef6a844b2c829">SetInputsOutputs()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a410a3c082f3d0858b398c6cc9f8e6a0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LoadCache </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>cache_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Load cached binary graph path.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cache_path</td><td>[in] load graph cache full path </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>RK_SUCCESS when success </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad00c21b795bad2e356b26230a0cb6589"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LoadCache </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cache_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Load cached binary graph buffer. Note: cache buffer need release after Build</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cache_path</td><td>[in] graph cache buffer </td></tr>
+    <tr><td class="paramname">size</td><td>[in] graph cache buffer size </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>RK_SUCCESS when success </dd></dl>
 
 </div>
 </div>

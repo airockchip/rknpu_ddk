@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['dilation',['dilation',['../structrk_1_1nn_1_1_conv2_d_attr.html#a16f380fb2d3d4c9fefacff0421d4fb99',1,'rk::nn::Conv2DAttr']]],
-  ['dims',['dims',['../structrk_1_1nn_1_1_tensor_attr.html#a8b02b30ba257186bc1996e5692b5140e',1,'rk::nn::TensorAttr']]]
+  ['cache_5fbuf',['cache_buf',['../structrk_1_1nn_1_1_n_b_g_attr.html#a7e7dcb39192467573d609236ebcad616',1,'rk::nn::NBGAttr']]],
+  ['cache_5fpath',['cache_path',['../structrk_1_1nn_1_1_n_b_g_attr.html#a7e7751051e5caced60a563d614d258d2',1,'rk::nn::NBGAttr']]],
+  ['const_5fval',['const_val',['../structrk_1_1nn_1_1_pad_attr.html#a29a2108561a6c0666bde5e107ca2c174',1,'rk::nn::PadAttr']]]
 ];

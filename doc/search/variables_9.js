@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['layout',['layout',['../structrk_1_1nn_1_1_input_info.html#a3e351601ce2a4a65f7944e445f3a32af',1,'rk::nn::InputInfo::layout()'],['../structrk_1_1nn_1_1_output_info.html#a3e351601ce2a4a65f7944e445f3a32af',1,'rk::nn::OutputInfo::layout()'],['../structrk_1_1nn_1_1_tensor_attr.html#a3e351601ce2a4a65f7944e445f3a32af',1,'rk::nn::TensorAttr::layout()']]],
-  ['length',['length',['../structrk_1_1nn_1_1_slice_attr.html#a2c1d9a9e7ccf8cd45fcbf69576a68ed3',1,'rk::nn::SliceAttr']]]
+  ['keep_5fdim',['keep_dim',['../structrk_1_1nn_1_1_reduce_attr.html#aa3a742b818fee14280c4511a075bdeee',1,'rk::nn::ReduceAttr']]],
+  ['ksize',['ksize',['../structrk_1_1nn_1_1_conv2_d_attr.html#a1f9e00d06c3316a80c339fa9f651c2a2',1,'rk::nn::Conv2DAttr::ksize()'],['../structrk_1_1nn_1_1_pool_attr.html#a1f9e00d06c3316a80c339fa9f651c2a2',1,'rk::nn::PoolAttr::ksize()']]]
 ];

@@ -79,6 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="#index_a"><span>a</span></a></li>
       <li><a href="#index_b"><span>b</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
       <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_f"><span>f</span></a></li>
@@ -89,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_l"><span>l</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
       <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_q"><span>q</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
@@ -122,19 +124,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>axis
 : <a class="el" href="structrk_1_1nn_1_1_concat_attr.html#a884869744ebf14a092b339ae65c2af37">ConcatAttr</a>
+, <a class="el" href="structrk_1_1nn_1_1_flatten_attr.html#a195d3f5576f1c8b039cff255b07a3aee">FlattenAttr</a>
 , <a class="el" href="structrk_1_1nn_1_1_gather_attr.html#a195d3f5576f1c8b039cff255b07a3aee">GatherAttr</a>
+, <a class="el" href="structrk_1_1nn_1_1_reduce_attr.html#ae24fdbe6c3829d0720718eb66b8e2ad6">ReduceAttr</a>
 , <a class="el" href="structrk_1_1nn_1_1_softmax_attr.html#a2cb2e9017f2f0fa6b0bc0451f9fe2bf0">SoftmaxAttr</a>
+, <a class="el" href="structrk_1_1nn_1_1_split_attr.html#a2cb2e9017f2f0fa6b0bc0451f9fe2bf0">SplitAttr</a>
+</li>
+<li>axis_num
+: <a class="el" href="structrk_1_1nn_1_1_reduce_attr.html#a34633783321964a27e18a009635b9baf">ReduceAttr</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>begin
+: <a class="el" href="structrk_1_1nn_1_1_pad_attr.html#ac9252192162f44c71ee815b44cf9a8b4">PadAttr</a>
+, <a class="el" href="structrk_1_1nn_1_1_strided_slice_attr.html#a3fb698560059dfeb9c6b7f47bf50164f">StridedSliceAttr</a>
+</li>
 <li>beta
 : <a class="el" href="structrk_1_1nn_1_1_softmax_attr.html#aa773d9a6c0ccefaa0fc9ab66fec68ec1">SoftmaxAttr</a>
+</li>
+<li>bias
+: <a class="el" href="structrk_1_1nn_1_1_scale_attr.html#ab881305da614121cd59b58172248c151">ScaleAttr</a>
 </li>
 <li>buf
 : <a class="el" href="structrk_1_1nn_1_1_input_info.html#a5bc5fa69bee375df074734a2c4858604">InputInfo</a>
 , <a class="el" href="structrk_1_1nn_1_1_output_info.html#a5bc5fa69bee375df074734a2c4858604">OutputInfo</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>cache_buf
+: <a class="el" href="structrk_1_1nn_1_1_n_b_g_attr.html#a7e7dcb39192467573d609236ebcad616">NBGAttr</a>
+</li>
+<li>cache_path
+: <a class="el" href="structrk_1_1nn_1_1_n_b_g_attr.html#a7e7751051e5caced60a563d614d258d2">NBGAttr</a>
+</li>
+<li>const_val
+: <a class="el" href="structrk_1_1nn_1_1_pad_attr.html#a29a2108561a6c0666bde5e107ca2c174">PadAttr</a>
 </li>
 </ul>
 
@@ -144,14 +172,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structrk_1_1nn_1_1_conv2_d_attr.html#a16f380fb2d3d4c9fefacff0421d4fb99">Conv2DAttr</a>
 </li>
 <li>dims
-: <a class="el" href="structrk_1_1nn_1_1_tensor_attr.html#a8b02b30ba257186bc1996e5692b5140e">TensorAttr</a>
+: <a class="el" href="structrk_1_1nn_1_1_tensor_attr.html#aa050fa50dbc4bb44202d54198d508201">TensorAttr</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>end
+: <a class="el" href="structrk_1_1nn_1_1_pad_attr.html#a21e64fd643a7d7f8268a959e24478d36">PadAttr</a>
+, <a class="el" href="structrk_1_1nn_1_1_strided_slice_attr.html#a799a26b8b8f60674fd1453ea373c4c13">StridedSliceAttr</a>
+</li>
 <li>eps
 : <a class="el" href="structrk_1_1nn_1_1_batch_norm_attr.html#a35a7ba355bea59cf202066a61418811d">BatchNormAttr</a>
+, <a class="el" href="structrk_1_1nn_1_1_instance_norm_attr.html#a35a7ba355bea59cf202066a61418811d">InstanceNormAttr</a>
+, <a class="el" href="structrk_1_1nn_1_1_layer_norm_attr.html#a35a7ba355bea59cf202066a61418811d">LayerNormAttr</a>
 </li>
 </ul>
 
@@ -190,6 +224,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_k"></a>- k -</h3><ul>
+<li>keep_dim
+: <a class="el" href="structrk_1_1nn_1_1_reduce_attr.html#aa3a742b818fee14280c4511a075bdeee">ReduceAttr</a>
+</li>
 <li>ksize
 : <a class="el" href="structrk_1_1nn_1_1_conv2_d_attr.html#a1f9e00d06c3316a80c339fa9f651c2a2">Conv2DAttr</a>
 , <a class="el" href="structrk_1_1nn_1_1_pool_attr.html#a1f9e00d06c3316a80c339fa9f651c2a2">PoolAttr</a>
@@ -216,6 +253,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>min
 : <a class="el" href="structrk_1_1nn_1_1_clip_attr.html#ad2e88d75f808e6d4e78d48bceb10c336">ClipAttr</a>
 </li>
+<li>mode
+: <a class="el" href="structrk_1_1nn_1_1_pad_attr.html#ad4196c07c76f059253a6530b5f7cabd7">PadAttr</a>
+</li>
 <li>multiplier
 : <a class="el" href="structrk_1_1nn_1_1_conv2_d_attr.html#aa48e56822ed6e4a79d6c8c3b688ca8d3">Conv2DAttr</a>
 </li>
@@ -225,6 +265,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
 <li>name
 : <a class="el" href="structrk_1_1nn_1_1_tensor_attr.html#a9b45b3e13bd9167aab02e17e08916231">TensorAttr</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>offset
+: <a class="el" href="structrk_1_1nn_1_1_n_b_g_attr.html#a894bdfa2d603d8343f8ef01dda6fcd23">NBGAttr</a>
 </li>
 </ul>
 
@@ -273,6 +320,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>ratio
+: <a class="el" href="structrk_1_1nn_1_1_dropout_attr.html#a207ad05f99cc72068a92358861ff5e71">DropoutAttr</a>
+</li>
 <li>role
 : <a class="el" href="structrk_1_1nn_1_1_tensor_attr.html#a7e946db3da2bfbc7db84110545bbd36e">TensorAttr</a>
 </li>
@@ -286,13 +336,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>scale
 : <a class="el" href="structrk_1_1nn_1_1_quantization_param_affine_asymmetric.html#ad172d714065755a3dbb38637f6d0b4aa">QuantizationParamAffineAsymmetric</a>
 , <a class="el" href="structrk_1_1nn_1_1_quantization_param_symmetric.html#ad172d714065755a3dbb38637f6d0b4aa">QuantizationParamSymmetric</a>
+, <a class="el" href="structrk_1_1nn_1_1_scale_attr.html#a1d28dec57cce925ad92342891bd71e7c">ScaleAttr</a>
+</li>
+<li>scales
+: <a class="el" href="structrk_1_1nn_1_1_upsample_attr.html#a5e5ec6e8d91ba0bb16ed387a29340463">UpsampleAttr</a>
 </li>
 <li>shapes
 : <a class="el" href="structrk_1_1nn_1_1_reshape_attr.html#a838b7629955a597b4c8a7087a3df368b">ReshapeAttr</a>
 </li>
 <li>size
 : <a class="el" href="structrk_1_1nn_1_1_input_info.html#ab2c6b258f02add8fdf4cfc7c371dd772">InputInfo</a>
+, <a class="el" href="structrk_1_1nn_1_1_n_b_g_attr.html#ab2c6b258f02add8fdf4cfc7c371dd772">NBGAttr</a>
 , <a class="el" href="structrk_1_1nn_1_1_output_info.html#ab2c6b258f02add8fdf4cfc7c371dd772">OutputInfo</a>
+</li>
+<li>sizes
+: <a class="el" href="structrk_1_1nn_1_1_upsample_attr.html#a74253df7333aff3efb33fbfef820eded">UpsampleAttr</a>
+</li>
+<li>slices
+: <a class="el" href="structrk_1_1nn_1_1_split_attr.html#a2197440cec5c7701b5e631dd11660bb0">SplitAttr</a>
 </li>
 <li>start
 : <a class="el" href="structrk_1_1nn_1_1_slice_attr.html#a1d2fc03668d3c04abbc19090b0146162">SliceAttr</a>
@@ -300,6 +361,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>stride
 : <a class="el" href="structrk_1_1nn_1_1_conv2_d_attr.html#a2e3b545d54c8cd6fff68ab1109e4740e">Conv2DAttr</a>
 , <a class="el" href="structrk_1_1nn_1_1_pool_attr.html#a2e3b545d54c8cd6fff68ab1109e4740e">PoolAttr</a>
+, <a class="el" href="structrk_1_1nn_1_1_reorg_attr.html#a981556a4e63b7b6d9f94975c7a8930ab">ReorgAttr</a>
+, <a class="el" href="structrk_1_1nn_1_1_strided_slice_attr.html#af9b9bdf19b32687b50fd179768ccea4c">StridedSliceAttr</a>
 </li>
 </ul>
 
@@ -307,7 +370,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
 <li>type
 : <a class="el" href="structrk_1_1nn_1_1_input_info.html#a8481bea28d86256005cd19236e1a7f89">InputInfo</a>
+, <a class="el" href="structrk_1_1nn_1_1_n_b_g_attr.html#a86355b0db06c66a2c3eb7e3a86a477b9">NBGAttr</a>
 , <a class="el" href="structrk_1_1nn_1_1_output_info.html#a8481bea28d86256005cd19236e1a7f89">OutputInfo</a>
+, <a class="el" href="structrk_1_1nn_1_1_reduce_attr.html#acf0310d1d803149139e472f1ec2fbce0">ReduceAttr</a>
 </li>
 </ul>
 

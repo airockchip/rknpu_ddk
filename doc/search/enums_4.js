@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['roundtype',['RoundType',['../namespacerk_1_1nn.html#aeae5c0a4b4ca188d1d02516f161a1384',1,'rk::nn']]]
+  ['quantizationtype',['QuantizationType',['../namespacerk_1_1nn.html#a0a46b5533bfcf042c3091803849e5e7b',1,'rk::nn']]]
 ];

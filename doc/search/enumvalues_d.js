@@ -1,6 +1,13 @@
 var searchData=
 [
   ['reduce',['REDUCE',['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117a315a9ca402673dba76b20984e1f7dcb5',1,'rk::nn']]],
+  ['reduce_5fall',['REDUCE_ALL',['../namespacerk_1_1nn.html#aa30f88e512485e0c006e50fc7e72c5b5ae443de3c548ebfd8c112028314553336',1,'rk::nn']]],
+  ['reduce_5fany',['REDUCE_ANY',['../namespacerk_1_1nn.html#aa30f88e512485e0c006e50fc7e72c5b5ab8d32f85202773bd265039cd74cc4332',1,'rk::nn']]],
+  ['reduce_5fmax',['REDUCE_MAX',['../namespacerk_1_1nn.html#aa30f88e512485e0c006e50fc7e72c5b5aea079a51906d4a31c2f0d9ad313d9c33',1,'rk::nn']]],
+  ['reduce_5fmean',['REDUCE_MEAN',['../namespacerk_1_1nn.html#aa30f88e512485e0c006e50fc7e72c5b5a23b513abb0568f7ffb6b5bb26c3d74ca',1,'rk::nn']]],
+  ['reduce_5fmin',['REDUCE_MIN',['../namespacerk_1_1nn.html#aa30f88e512485e0c006e50fc7e72c5b5a636539b20b709fb54e2557741fcd55b9',1,'rk::nn']]],
+  ['reduce_5fprod',['REDUCE_PROD',['../namespacerk_1_1nn.html#aa30f88e512485e0c006e50fc7e72c5b5a5954685a88d1f0b911d43fffaf24fd00',1,'rk::nn']]],
+  ['reduce_5fsum',['REDUCE_SUM',['../namespacerk_1_1nn.html#aa30f88e512485e0c006e50fc7e72c5b5adc1f40b6ac21ec871b1ada167ac4ad86',1,'rk::nn']]],
   ['relu',['RELU',['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117a9b69aa04edddb5cade1fea783ef633a3',1,'rk::nn']]],
   ['relu1',['RELU1',['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117a7169e795eb3b9b07c6a745e8182df345',1,'rk::nn']]],
   ['relu6',['RELU6',['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117aada18f14cd0b475ce0f63612bf5b52dc',1,'rk::nn']]],

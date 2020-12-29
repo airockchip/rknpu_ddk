@@ -1,10 +1,13 @@
 var searchData=
 [
+  ['cache_5fbuf',['cache_buf',['../structrk_1_1nn_1_1_n_b_g_attr.html#a7e7dcb39192467573d609236ebcad616',1,'rk::nn::NBGAttr']]],
+  ['cache_5fpath',['cache_path',['../structrk_1_1nn_1_1_n_b_g_attr.html#a7e7751051e5caced60a563d614d258d2',1,'rk::nn::NBGAttr']]],
   ['clip',['CLIP',['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117ad4624417d4872d4ff7b0a75ec2f8a4c7',1,'rk::nn']]],
   ['clipattr',['ClipAttr',['../structrk_1_1nn_1_1_clip_attr.html',1,'rk::nn']]],
   ['concat',['CONCAT',['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117a9044fbb1b4b9307bcd680468a58c22f2',1,'rk::nn']]],
   ['concatattr',['ConcatAttr',['../structrk_1_1nn_1_1_concat_attr.html',1,'rk::nn']]],
   ['const',['CONST',['../namespacerk_1_1nn.html#ab7117a78440b149f5bec3994079bb08bab4f1540c6f7bdeebaa42943a2405478d',1,'rk::nn']]],
+  ['const_5fval',['const_val',['../structrk_1_1nn_1_1_pad_attr.html#a29a2108561a6c0666bde5e107ca2c174',1,'rk::nn::PadAttr']]],
   ['conv1d',['CONV1D',['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117a9547b69717464482c24eb77e1a55f8ab',1,'rk::nn']]],
   ['conv2d',['CONV2D',['../namespacerk_1_1nn.html#a6a02b2d1d62293b20242e3dcfbdd0117aebefe77f2420f48da80071aa1a684253',1,'rk::nn']]],
   ['conv2dattr',['Conv2DAttr',['../structrk_1_1nn_1_1_conv2_d_attr.html',1,'rk::nn']]],

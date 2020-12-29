@@ -1,3 +1,17 @@
+// Copyright (c) 2020 by Rockchip Electronics Co., Ltd. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
 #include <iostream>
 #include <vector>
 #include <string.h>
@@ -5,7 +19,6 @@
 #include <fstream>
 
 #include "rknpu/rknpu_pub.h"
-
 
 using namespace rk::nn;
 using namespace std;
@@ -192,7 +205,7 @@ int CreateGraph(Graph* graph,std::string cache_path,bool save_cache = false) {
     } 
     else  
     {
-        auto relu1 = graph->LoadCache(cache_path);
+        auto status = graph->LoadCache(cache_path);
         auto input_attrs = graph->GetInputTensorsAttr();
         auto output_attrs = graph->GetOutputTensorsAttr();
         int count=0;

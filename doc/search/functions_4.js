@@ -2,12 +2,20 @@ var searchData=
 [
   ['getattrs',['GetAttrs',['../classrk_1_1nn_1_1_operator.html#a0a4fab3064d93098e23c045f08cfebc5',1,'rk::nn::Operator::GetAttrs()'],['../classrk_1_1nn_1_1_tensor.html#a7bf54ef4b865b43e230ebab8b1f286bf',1,'rk::nn::Tensor::GetAttrs()']]],
   ['getdata',['GetData',['../classrk_1_1nn_1_1_tensor.html#a346c0bd4892a6bf7fdb15b2204411da3',1,'rk::nn::Tensor']]],
-  ['getdims',['GetDims',['../classrk_1_1nn_1_1_tensor.html#a4e40c599b679ab922f5fcd2a9e388d71',1,'rk::nn::Tensor']]],
+  ['getdims',['GetDims',['../classrk_1_1nn_1_1_tensor.html#a722f2ec00b86cc6498f9638ced2d6796',1,'rk::nn::Tensor']]],
   ['getgraph',['GetGraph',['../classrk_1_1nn_1_1_exection.html#a865069bb86c88e114867adcf6c162f9a',1,'rk::nn::Exection']]],
   ['getinputs',['GetInputs',['../classrk_1_1nn_1_1_graph.html#a99030fda5c18514c1c07220e6b726fb5',1,'rk::nn::Graph::GetInputs()'],['../classrk_1_1nn_1_1_operator.html#a2db27e0d33f920a549bd07518a972551',1,'rk::nn::Operator::GetInputs()']]],
+  ['getinputtensorsattr',['GetInputTensorsAttr',['../classrk_1_1nn_1_1_graph.html#a0944cb9866a1c6409410e0fb75fe4b62',1,'rk::nn::Graph']]],
+  ['getlayouttype',['GetLayoutType',['../classrk_1_1nn_1_1_tensor.html#a23488061963795be6f8341c5a9d3246a',1,'rk::nn::Tensor']]],
   ['getname',['GetName',['../classrk_1_1nn_1_1_operator.html#aad070fff7591d0c70a4b95b51a939f5b',1,'rk::nn::Operator::GetName()'],['../classrk_1_1nn_1_1_tensor.html#ae20ad6ba616b8a2afed1e3538a75ed4a',1,'rk::nn::Tensor::GetName()']]],
   ['getoutputs',['GetOutputs',['../classrk_1_1nn_1_1_exection.html#a259e1cad06eb8aeb5fba41c0134c271e',1,'rk::nn::Exection::GetOutputs()'],['../classrk_1_1nn_1_1_graph.html#acf0264ec0bb37c6eda9b584bd9820177',1,'rk::nn::Graph::GetOutputs()'],['../classrk_1_1nn_1_1_operator.html#a07506732729cb275237a8b5b26986a4a',1,'rk::nn::Operator::GetOutputs()']]],
+  ['getoutputtensorsattr',['GetOutputTensorsAttr',['../classrk_1_1nn_1_1_graph.html#a9ee83c28fa54bc3c7222da91a4b90a2e',1,'rk::nn::Graph']]],
   ['getprecision',['GetPrecision',['../classrk_1_1nn_1_1_tensor.html#af7b4944df07afc86d550b0ee9ae6c45f',1,'rk::nn::Tensor']]],
+  ['getqntbits',['GetQntBits',['../classrk_1_1nn_1_1_tensor.html#a7b6e25baf7ef4badf2fdd489e42a4e33',1,'rk::nn::Tensor']]],
+  ['getqntparamaffineasymmetric',['GetQntParamAffineAsymmetric',['../classrk_1_1nn_1_1_tensor.html#ab2265e8e971b860e43a0742b4c239cb2',1,'rk::nn::Tensor']]],
+  ['getqntparamdfp',['GetQntParamDFP',['../classrk_1_1nn_1_1_tensor.html#a2282b26961680f6db27fd69d9b88b97d',1,'rk::nn::Tensor']]],
+  ['getqntparamsymmetric',['GetQntParamSymmetric',['../classrk_1_1nn_1_1_tensor.html#abfb3e2df54ead34bb716dd279af1c484',1,'rk::nn::Tensor']]],
+  ['getqnttype',['GetQntType',['../classrk_1_1nn_1_1_tensor.html#a91a31df352bbf7eb0a1efdbce046552a',1,'rk::nn::Tensor']]],
   ['getrole',['GetRole',['../classrk_1_1nn_1_1_tensor.html#a7d8b65cae7754b9490cb64866fad9bb6',1,'rk::nn::Tensor']]],
   ['graph',['Graph',['../classrk_1_1nn_1_1_graph.html#afc5ef9d72cc2c509814200791eaef62c',1,'rk::nn::Graph']]]
 ];

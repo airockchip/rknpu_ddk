@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['tensor',['Tensor',['../classrk_1_1nn_1_1_tensor.html',1,'rk::nn']]],
-  ['tensorattr',['TensorAttr',['../structrk_1_1nn_1_1_tensor_attr.html',1,'rk::nn']]]
+  ['reduceattr',['ReduceAttr',['../structrk_1_1nn_1_1_reduce_attr.html',1,'rk::nn']]],
+  ['reorgattr',['ReorgAttr',['../structrk_1_1nn_1_1_reorg_attr.html',1,'rk::nn']]],
+  ['reshapeattr',['ReshapeAttr',['../structrk_1_1nn_1_1_reshape_attr.html',1,'rk::nn']]]
 ];
