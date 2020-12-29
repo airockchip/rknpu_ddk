@@ -252,8 +252,11 @@ struct LayerNormAttr {
 /** attrbutes of NBG
  */
 struct NBGAttr {
-    NBGType type;                ///< nbg type
-    std::string nbg_path;        ///< nbg full path
+    NBGType type;                   ///< nbg type
+    std::string cache_path;         ///< cache path
+    char *cache_buf;                ///< cache buffer
+    uint32_t offset;                ///< nbg buffer offset
+    uint32_t size;                  ///< nbg buffer size
 };
 
 /** attrbutes of Flatten
@@ -273,6 +276,33 @@ struct InstanceNormAttr {
 struct ScaleAttr {
     float scale;                     ///< scale
     float bias;                      ///< bias
+};
+
+/** attributes of Split
+ */
+struct SplitAttr {
+    uint32_t axis;                  ///< axis
+    std::vector<uint32_t> slices;   ///< slices
+};
+
+
+/** attributes of Dropout
+ */
+struct DropoutAttr {
+    float ratio;                    ///< ratio
+};
+
+/** attributes of Upsample
+ */
+struct UpsampleAttr {
+    std::vector<uint32_t> scales;   ///< scales, 2d-array
+    std::vector<uint32_t> sizes;    ///< sizes, 2d-array
+};
+
+/** attributes of Reorg
+ */
+struct ReorgAttr {
+    uint32_t stride;                ///< stride
 };
 
 /** Operator is used to get the basic imformation.

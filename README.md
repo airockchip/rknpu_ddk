@@ -4,7 +4,7 @@
 ## Support Platform
 
 - RK1808
-- RK1806
+- RV1109/RV1126
 
 Note: RK3399Pro platform is not supported.
 

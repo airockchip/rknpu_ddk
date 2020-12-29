@@ -74,6 +74,18 @@ public:
     */
     std::vector<std::shared_ptr<Tensor>> GetOutputs();
     
+    /** Get the attribute of input tensors
+     * 
+     * @return input tensors attribute set by SetInputsOutputs()
+    */
+    std::vector<std::shared_ptr<TensorAttr>> GetInputTensorsAttr();
+
+    /** Get the attribute of output tensors
+     * 
+     * @return output tensors attribute set by SetInputsOutputs()
+    */
+    std::vector<std::shared_ptr<TensorAttr>> GetOutputTensorsAttr();
+    
     /** Enable cache mode, which cache compiled model to binary graph when first run.
      * 
      *  @param cache_path [in] save graph cache full path
@@ -84,11 +96,17 @@ public:
     /** Load cached binary graph path.
      * 
      *  @param cache_path [in] load graph cache full path
-     *  @param input_tensors [in] input tensors of graph
-     *  @param output_tensors [in] output tensors of graph
      *  @return RK_SUCCESS when success
     */
-    int LoadCache(std::string cache_path,std::vector<std::shared_ptr<Tensor>> input_tensors, std::vector<std::shared_ptr<Tensor>> output_tensors);
+    int LoadCache(std::string cache_path);
+
+    /** Load cached binary graph buffer. Note: cache buffer need release after Build
+     * 
+     *  @param cache_path [in] graph cache buffer
+     *  @param size [in] graph cache buffer size
+     *  @return RK_SUCCESS when success
+    */
+    int LoadCache(const char* cache_buf,size_t size);
 };
 
 }

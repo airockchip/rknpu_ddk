@@ -93,7 +93,7 @@ struct QuantizationParamSymmetric {
  */
 struct TensorAttr {
     std::string name;                                               ///< name of tensor
-    std::vector<uint32_t> dims;                                     ///< shape of tensor
+    std::vector<int32_t> dims;                                      ///< shape of tensor
     PrecisionType precision;                                        ///< precision of tensor
     DataLayoutType layout;                                          ///< data layout of tensor
     TensorRole role;                                                ///< role of tensor
@@ -119,13 +119,19 @@ public:
      * 
      *  @return the dimensions of Tensor 
      */ 
-    virtual std::vector<uint32_t> GetDims() = 0;
+    virtual std::vector<int32_t> GetDims() = 0;
 
     /** Get the precision of Tensor.
      * 
      *  @return the precision of Tensor 
      */ 
     virtual PrecisionType GetPrecision() = 0;
+
+    /** Get the layout type of Tensor.
+     * 
+     *  @return the layout type of Tensor 
+     */ 
+    virtual DataLayoutType GetLayoutType() = 0;
 
     /** Get the name of Tensor.
      * 
@@ -138,6 +144,36 @@ public:
      *  @return the role of Tensor 
      */ 
     virtual TensorRole GetRole() = 0;
+    
+    /** Get the Quantization type of Tensor.
+     * 
+     *  @return the Quantization type of Tensor 
+     */ 
+    virtual QuantizationType GetQntType() const = 0;
+
+    /** Get the Quantization Bits of Tensor.
+     * 
+     *  @return the Quantization Bits of Tensor 
+     */ 
+    virtual uint8_t GetQntBits() const = 0;
+    
+    /** Get the Dynamic fixed point Quantization parameters of Tensor.
+     * 
+     *  @return the Dynamic fixed point Quantization parameters of Tensor 
+     */ 
+    virtual QuantizationParamDFP GetQntParamDFP() const = 0;
+    
+    /** Get the Affine Asymmetric Quantization parameters of Tensor.
+     * 
+     *  @return the Affine Asymmetric Quantization parameters of Tensor 
+     */ 
+    virtual QuantizationParamAffineAsymmetric GetQntParamAffineAsymmetric() const = 0;
+
+    /** Get the Symmetric Quantization parameters of Tensor.
+     * 
+     *  @return the Symmetric Quantization parameters of Tensor 
+     */ 
+    virtual QuantizationParamSymmetric GetQntParamSymmetric() const = 0;
 
     /** Get the attributes of Tensor.
      * 
